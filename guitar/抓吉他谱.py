@@ -2,12 +2,11 @@ import requests
 import re
 import time
 from bs4 import BeautifulSoup
-from concurrent.futures import ThreadPoolExecutor
 import os
 
 def open_html(url):
     try:
-        r = requests.get(url, timeout=20)
+        r = requests.get(url)
         r.encoding = 'gbk'
         return r.text
     except:
