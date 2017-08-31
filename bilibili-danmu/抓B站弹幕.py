@@ -43,10 +43,10 @@ def save_danmu(dmlist):
     for dm in dmlist:
         message = str(dm.string)
         connection = pymysql.connect(
-                            host='192.168.31.40',  # 连接你的数据库
-                            user='feng',        # mysql用户名
-                            passwd='19950411',  # 密码
-                            db='feng',      # 数据库名字
+                            host='XXXX',  # 连接你的数据库
+                            user='XXXX',        # mysql用户名
+                            passwd='XXXX',  # 密码
+                            db='XXXX',      # 数据库名字
                             charset='utf8mb4',     # 编码方式
                             cursorclass=pymysql.cursors.DictCursor)
       
