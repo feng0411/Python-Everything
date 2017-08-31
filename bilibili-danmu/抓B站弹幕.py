@@ -6,23 +6,23 @@ import pymysql
 
 def get_url():
     #阅后即瞎列表
-    #url_list = ['https://www.bilibili.com/video/av13925037/',
-                    #'https://www.bilibili.com/video/av13638713/',
-                    #'https://www.bilibili.com/video/av13368026/',
-                    #'https://www.bilibili.com/video/av13072404/',
-                    #'https://www.bilibili.com/video/av12807059/',
-                    #'https://www.bilibili.com/video/av12538898/',
-                    #'https://www.bilibili.com/video/av12294146/',
-                    #'https://www.bilibili.com/video/av12079240/',
-                    #'https://www.bilibili.com/video/av11855371/',
-                    #'https://www.bilibili.com/video/av11643925/',
-                    #'https://www.bilibili.com/video/av11456402/',
-                    #'https://www.bilibili.com/video/av11274857/',
-                    #'https://www.bilibili.com/video/av11119815/'
-                    #]
+    url_list = ['https://www.bilibili.com/video/av13925037/',
+                    'https://www.bilibili.com/video/av13638713/',
+                    'https://www.bilibili.com/video/av13368026/',
+                    'https://www.bilibili.com/video/av13072404/',
+                    'https://www.bilibili.com/video/av12807059/',
+                    'https://www.bilibili.com/video/av12538898/',
+                    'https://www.bilibili.com/video/av12294146/',
+                    'https://www.bilibili.com/video/av12079240/',
+                    'https://www.bilibili.com/video/av11855371/',
+                    'https://www.bilibili.com/video/av11643925/',
+                    'https://www.bilibili.com/video/av11456402/',
+                    'https://www.bilibili.com/video/av11274857/',
+                    'https://www.bilibili.com/video/av11119815/'
+                    ]
     #遍历列表
-    #for i in url_list:
-    get_danmu('https://www.bilibili.com/video/av13072404/')
+    for i in url_list:
+        get_danmu(i)
     
  
 def get_danmu(url):
